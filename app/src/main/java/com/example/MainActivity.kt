@@ -1,5 +1,5 @@
 package com.example
-
+import androidx.compose.foundation.layout.padding
 import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -53,11 +53,11 @@ class MainActivity : ComponentActivity() {
                         permissionLauncher.launch(android.Manifest.permission.POST_NOTIFICATIONS)
                     }
                 }
-
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     // Render the WaterTrackerScreen
                     WaterTrackerScreen(
-                        viewModel = viewModel
+                        viewModel = viewModel,
+                        modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
