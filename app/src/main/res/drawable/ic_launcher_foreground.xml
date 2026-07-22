@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Glowing Background Aura -->
+    <path
+        android:fillColor="#1F00E5FF"
+        android:pathData="M54,54m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0" />
+
+    <!-- Stylized Person Profile (Tilting Head Back to Drink) -->
+    <!-- Neck and Chest -->
+    <path
+        android:fillColor="#00B0FF"
+        android:pathData="M34,88 C34,74 44,70 48,64 C50,61.5 48,56 46,54 C44,52 38,51 38,45 C38,42 41,38 45,36 C47,35 48,32 46,30 C44,28 39,26 38,30 C34,42 24,46 24,62 C24,78 28,88 34,88 Z" />
+
+    <!-- Head / Face Silhouette tilted up & right -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M48,56 C52,58 56,58 58,54 C60,51.5 59,48.5 61,48 C63,47.5 65,49 67,47.5 C69,46 68.5,43 70,41 C71.5,39 74.5,39 75,36 C75.5,33 73,30 70,29 C67,28 64.5,29.5 63,27 C61.5,24.5 62,21.5 59,20 C56,18.5 52,19.5 49,21 C44,23.5 40,28 42,35 C43,38.5 42,42 44,45 C46,48 44,53 48,56 Z" />
+
+    <!-- Stylized Hair -->
+    <path
+        android:fillColor="#00373C"
+        android:pathData="M49,21 C45,23 41,27 42,32 C41,29 42,25 45,23 C48,21 52,19.5 55,20 C52,20 50,20.5 49,21 Z" />
+
+    <!-- The Water Bottle (Tilted at 45 degrees towards the mouth) -->
+    <path
+        android:fillColor="#E0F7FA"
+        android:pathData="M78,28 L64,42 C62.5,43.5 60,43.5 58.5,42 L56,39.5 C54.5,38 54.5,35.5 56,34 L70,20 C71.5,18.5 74,18.5 75.5,20 L78,22.5 C79.5,24 79.5,26.5 78,28 Z" />
+
+    <!-- Bottle cap / nozzle details -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M59.5,37.5 L55,42 L52.5,39.5 L57,35 Z" />
+
+    <!-- Water Stream / Droplets flowing from bottle to mouth -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M54,42 C51,45 49,49 51,52 C52,53.5 54,54 55,52 C56,50 54.5,46 55.5,44 C56.5,42 57,41 54,42 Z" />
+        
+    <path
+        android:fillColor="#E0F7FA"
+        android:pathData="M50,47 A1.5,1.5 0,1,1 47,47 A1.5,1.5 0,1,1 50,47 Z" />
+</vector>

@@ -1,0 +1,6 @@
+{
+  "name": "Hydro",
+  "description": "Une application de suivi d'hydratation moderne et élégante avec un thème sombre Material 3 aux accents turquoise.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
