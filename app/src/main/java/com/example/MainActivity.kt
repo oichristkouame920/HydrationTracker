@@ -1,5 +1,5 @@
 package com.example
-import androidx.compose.foundation.layout.padding
+
 import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,17 +8,23 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.data.AppDatabase
 import com.example.data.WaterRepository
+import com.example.ui.HeaderSection
 import com.example.ui.WaterTrackerScreen
 import com.example.ui.WaterViewModel
 import com.example.ui.WaterViewModelFactory
+import com.example.ui.theme.AppThemeMode
+import com.example.ui.theme.AppThemeStyle
 import com.example.ui.theme.MyApplicationTheme
 import com.example.utils.NotificationHelper
 
@@ -53,6 +59,7 @@ class MainActivity : ComponentActivity() {
                         permissionLauncher.launch(android.Manifest.permission.POST_NOTIFICATIONS)
                     }
                 }
+
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     // Render the WaterTrackerScreen
                     WaterTrackerScreen(
@@ -65,4 +72,10 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
+@Preview(showBackground = true)
+@Composable
+fun HeaderSectionPreview() {
+    MyApplicationTheme(themeStyle = AppThemeStyle.TURQUOISE, themeMode = AppThemeMode.SYSTEM) {
+        HeaderSection(onReset = {}, onThemeClick = {})
+    }
+}
